@@ -1,0 +1,4 @@
+10,Ragini,50000,F
+11,Abhinay,18000,M
+12,Sujay,25000,M
+13,Spoorthy,15000,F
