@@ -1,0 +1,33 @@
+<div class="col-md-4 offset-md-4 "> <br><br>
+    <div class="input-group">
+        <div class="input-group-prepend"> 
+            <span class="input-group-text">Search</span>
+        </div>
+        <input class="form-control ng-untouched ng-pristine ng-valid" type="search" style="text-align: center;" placeholder="Search Products Here" (input)="search($event)">
+    </div>
+</div>
+
+<div *ngFor='let product of products'>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark" style="color:white; background-color: black;">
+            <tr>
+            <td>Product Id</td>
+            <td>Company</td>
+            <td>Category</td>
+            <td>Qunatity</td>
+            <td>Price</td>
+    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{product.id}}</td>
+                <td>{{product.company}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.price}}</td>
+                </tr>
+                </tbody>
+                </table>
+</div>
+

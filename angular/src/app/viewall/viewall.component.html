@@ -1,0 +1,34 @@
+<div class="card card-body">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark" style="color:white; background-color: black;">
+            <tr>
+            <td>Product Id</td>
+            <td>Product Name</td>
+            <td>Company</td>
+            <td>Category</td>
+            <td>Quantity</td>
+            <td>price</td>
+            <td>Add to Cart</td>
+    
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let li of list'>
+                <td>{{li.id}}</td>
+                <td>{{li.name}}</td>
+                <td>{{li.company}}</td>
+                <td>{{li.category}}</td>
+                <td>{{li.quantity}}</td>
+                <td>{{li.price}}</td>
+                <td>
+                    <div>
+                        <button type="button" (click)='addCart(li)' >Add to Cart</button>
+                    </div>
+    
+                </td>
+               
+                
+            </tr>
+        </tbody>
+      </table>
+      </div>

@@ -1,0 +1,6 @@
+.background{
+    min-width: 150vh;
+    min-height: 55vh;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/02/20/13/shopping-1232944__340.jpg"); 
+    transform: scale(1.0,1.65);
+}
